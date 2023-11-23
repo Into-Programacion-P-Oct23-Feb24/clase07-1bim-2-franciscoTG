@@ -27,20 +27,25 @@ public class Ejemplo09 {
         int nota;
         int salida;
         String nombre; // *
+        String apellido;
         double promedio;
         boolean bandera = true;
         int suma = 0;
         int contador_calificaciones = 0;
-        
-        cadenaFinal = "Listado de Notas\n";
-        
+        cadenaFinal = "Listado de Notas\n";              
         do {
-            
+            System.out.println("Ingrese nombre");
+            nombre = entrada.nextLine();
+            System.out.println("Ingrese apellido");
+            apellido = entrada.nextLine();
             
             // agrego valor al acumulador
             suma = suma + nota;
             // agrego una unidad al contador para luego sacar el promedio
             contador_calificaciones = contador_calificaciones + 1;
+            
+            cadenaFinal = String.format("%sCalificación: %d\n",
+                    cadenaFinal,nota);
             
             
             System.out.println("Ingrese (-111) si desea salir del ciclo; "
@@ -65,3 +70,4 @@ public class Ejemplo09 {
         System.out.printf("%s\n", cadenaFinal);
     }
 }
+

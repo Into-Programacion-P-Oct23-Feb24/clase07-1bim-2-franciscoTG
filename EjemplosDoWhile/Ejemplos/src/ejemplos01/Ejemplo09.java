@@ -39,7 +39,7 @@ public class Ejemplo09 {
             // agrego valor a la cadena final
             cadenaFinal = String.format("%sCalificación: %d\n",
                     cadenaFinal,
-                    nota);
+                    nota); // %d es nota
             System.out.println("Ingrese (-111) si desea salir del ciclo; "
                     + "cualquier otro número para continuar");
             salida = entrada.nextInt();
@@ -52,6 +52,9 @@ public class Ejemplo09 {
 
         // promedio = suma / contador_calificaciones;
         promedio = (double) suma / contador_calificaciones;
+        // En esta linea le estamos cambiando un valor de tipo entero a uno 
+        //decimal 
+        
         cadenaFinal = String.format("%s\nPromedio de calificaciones: %.2f",
                 cadenaFinal,
                 promedio);
