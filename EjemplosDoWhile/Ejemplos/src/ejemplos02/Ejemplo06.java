@@ -32,7 +32,10 @@ public class Ejemplo06 {
         int operacion;
         int contador = 1;
         int limite;
-        
+        System.out.println("Ingrese la tabla a generar");
+        tabla = entrada.nextInt();//2
+        System.out.println("Ingrese el limite a generar");               
+        limite = entrada.nextInt();//2
         do {
             operacion = tabla * contador;
             System.out.printf("%d x %d = %d\n", tabla, contador, operacion);
@@ -41,3 +44,4 @@ public class Ejemplo06 {
 
     }
 }
+

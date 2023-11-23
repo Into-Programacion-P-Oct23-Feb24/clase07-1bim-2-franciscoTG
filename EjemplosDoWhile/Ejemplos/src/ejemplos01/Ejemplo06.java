@@ -30,11 +30,16 @@ public class Ejemplo06 {
         int operacion;
         int contador = 1;
         System.out.println("Ingrese la tabla a generar");
-        tabla = entrada.nextInt();
+        tabla = entrada.nextInt();//2
 
         do {
-            operacion = tabla * contador;
-            System.out.printf("%d x %d = %d\n", tabla, contador, operacion);
+            operacion = tabla * contador; // 2*1=2
+            //2 x 1 = 2
+            //2 x 2 = 4
+            System.out.printf("%d x %d = %d\n", 
+                    tabla, 
+                    contador, 
+                    operacion);
             contador = contador + 1;
         } while (contador <= 10);
 
